@@ -387,10 +387,18 @@ ul {
 }
 
 .pre-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
+  margin-bottom: 30px;
+  font-style: 28px;
+  line-height: 1.14;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .pre-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .activity {
@@ -423,17 +431,18 @@ ul {
 
 .socials {
   display: flex;
-  justify-content: space-between;
-}
-
-.about-soc {
-  padding-right: 32px;
-  padding-left: 32px;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials-list {
   width: 44px;
   height: 44px;
+  margin-right: 10px;
+}
+
+.socials-list:last-child {
+  margin-right: 0;
 }
 
 .socials-link {
@@ -484,16 +493,38 @@ ul {
   fill: var(--primary-bg-color);
 }
 
-.about {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-list {
-  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .about-list:first-child {
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .about-list:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list {
+    width: calc(100% / 4 - 30px);
+  }
+  .about-list:nth-child(3) {
+    margin-left: 30px;
+  }
 }
 
 .about-title {
@@ -514,6 +545,10 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.com-img {
+  width: 100%;
 }
 
 .clients {

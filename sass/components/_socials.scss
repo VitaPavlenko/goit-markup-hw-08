@@ -1,16 +1,25 @@
 .socials {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-soc {
-  padding-right: 32px;
-  padding-left: 32px;
-}
+// .about-soc {
+//   // padding-right: 32px;
+//   // padding-left: 32px;
+
+//   padding-right: 122px;
+//   padding-left: 122px;
+// }
 
 .socials-list {
   width: 44px;
   height: 44px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials-link {
