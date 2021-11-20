@@ -414,6 +414,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .activ-set {
+    display: none;
+  }
+}
+
 .activity {
   display: flex;
 }
