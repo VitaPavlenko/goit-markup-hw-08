@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+}
+
+.about-list {
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.about-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.about-text {
+  margin-bottom: 16px;
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.about-items {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}

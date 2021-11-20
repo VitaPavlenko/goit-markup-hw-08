@@ -1,0 +1,18 @@
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+.not-padding {
+  padding-bottom: 0;
+}
+
+.not-margin {
+  margin-right: 0px;
+}

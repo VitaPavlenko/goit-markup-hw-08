@@ -1,0 +1,27 @@
+.activity {
+  display: flex;
+}
+
+.activity__list {
+  margin-left: 30px;
+  position: relative;
+}
+
+.activity__list:first-child {
+  margin-left: 0;
+}
+
+.activity__text {
+  font-weight: 500;
+  position: absolute;
+  font-size: 14px;
+  line-height: 1.14;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  color: var(--accent-whiter-color);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 27px;
+}
