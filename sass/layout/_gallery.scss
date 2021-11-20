@@ -1,37 +1,59 @@
 .gallery-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-list {
   margin-left: 8px;
   &:first-child {
     margin-left: 0;
+    margin-bottom: 8px;
+  }
+  &:nth-child(4) {
+    margin-left: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-bottom: 0px;
+    }
   }
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-  padding: 0;
   list-style: none;
-  justify-content: center;
+  // justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 
 .gallery-list {
-  width: inherit;
-  margin-left: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100% - 90px) / 3);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,11 +61,19 @@
     box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06),
       0px 1px rgba(0, 0, 0, 0.12);
   }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
 .gallery-img {
+  width: 100%;
   display: block;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -58,7 +88,6 @@
   left: 0;
   font-size: 18px;
   line-height: 1.55;
-  width: 370px;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--accent-whiter-color);
