@@ -100,12 +100,17 @@ ul {
 }
 
 .logo {
-  margin-right: 93px;
   color: #2196f3;
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo-element {
@@ -127,13 +132,54 @@ ul {
 }
 
 .nav-header {
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-header {
+    padding-left: 0px;
+  }
+}
+
+.button-menu {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bg-color);
+  border: none;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-menu:hover, .button-menu:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.icon-menu {
+  width: 24px;
+  height: 16px;
 }
 
 .nav-set {
   display: flex;
   margin-right: 305px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-set {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -150,8 +196,6 @@ ul {
   text-decoration: none;
   cursor: pointer;
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -167,15 +211,34 @@ ul {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .nav-adress {
   display: flex;
+  flex-direction: column;
   color: var(--title-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav-adress {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-adress {
+    flex-direction: row;
+  }
 }
 
 .nav-adress-list {
   display: inline-block;
   color: var(--title-text-color);
-  margin-right: 30px;
   fill: var(--title-text-color);
   transition-property: fill;
   transition-duration: 250ms;
@@ -188,6 +251,12 @@ ul {
 
 .nav-adress-list:hover, .nav-adress-list:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-adress-list {
+    margin-right: 30px;
+  }
 }
 
 .nav-icon {
@@ -255,6 +324,7 @@ ul {
 }
 
 .hero {
+  max-width: 1600px;
   height: 600px;
   padding-top: 118px;
   padding-bottom: 118px;

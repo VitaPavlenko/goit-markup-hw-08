@@ -1,10 +1,14 @@
 .logo {
-  margin-right: 93px;
+  // margin-right: 93px;
+
   color: #2196f3;
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo-element {
