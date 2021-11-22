@@ -131,7 +131,10 @@
   height: 4px;
   width: 100%;
   position: absolute;
-  top: 76px;
+  top: 52px;
+  @media screen and (min-width: 1200px) {
+    top: 76px;
+  }
 }
 
 .menu-open {
