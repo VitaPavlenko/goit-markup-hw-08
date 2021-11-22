@@ -1,3 +1,7 @@
+.form-email {
+  margin-top: 60px;
+}
+
 .form-text {
   font-size: 14px;
   font-weight: 700;
@@ -5,14 +9,18 @@
   color: var(--accent-whiter-color);
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding-top: 12px;
+  // padding-top: 12px;
+  text-align: center;
 }
 
 .form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-input {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);

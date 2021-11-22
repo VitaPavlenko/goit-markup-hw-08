@@ -117,6 +117,8 @@ ul {
   display: block;
   width: 145px;
   padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .accent-header {
@@ -714,11 +716,14 @@ ul {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-block {
+  margin-bottom: 60px;
   display: block;
-  margin-right: 70px;
+  text-align: center;
 }
 
 .footer-adress {
@@ -728,7 +733,7 @@ ul {
 }
 
 .footer-list {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .adress-link {
@@ -756,11 +761,10 @@ ul {
 }
 
 .footer-socials-blok {
-  padding-top: 12px;
   display: flex;
   width: 207px;
-  margin-right: 93px;
   flex-direction: column;
+  text-align: center;
   color: var(--accent-whiter-color);
 }
 
@@ -903,6 +907,10 @@ ul {
   line-height: 1.87;
 }
 
+.form-email {
+  margin-top: 60px;
+}
+
 .form-text {
   font-size: 14px;
   font-weight: 700;
@@ -910,14 +918,17 @@ ul {
   color: var(--accent-whiter-color);
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding-top: 12px;
+  text-align: center;
 }
 
 .form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-input {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
