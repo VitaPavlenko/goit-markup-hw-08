@@ -41,7 +41,7 @@
     display: none;
   }
   display: flex;
-  margin-right: 305px;
+  // margin-right: 305px;
 }
 
 .nav-list {
@@ -71,6 +71,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
