@@ -1041,18 +1041,26 @@ ul {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
+  overflow: scroll;
 }
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px 40px 0 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .close-btn {
@@ -1157,11 +1165,17 @@ ul {
   border-radius: 4px;
   padding: 10px 55px;
   text-align: center;
-  margin-left: 125px;
+  margin-left: 85px;
   margin-top: 20px;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .button-send {
+    margin-left: 125px;
+  }
 }
 
 .check-text {
@@ -1169,15 +1183,29 @@ ul {
   align-items: center;
   justify-content: center;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: var(--title-text-color);
-  margin-right: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
 }
 
 .check-link {
   color: var(--accent-color);
-  margin: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-link {
+    margin: 5px;
+  }
 }
 
 .check-text span {
@@ -1194,6 +1222,10 @@ ul {
 .input-icon-check {
   display: flex;
   fill: var(--accent-whiter-color);
+}
+
+.input-icon-check::after .check-text {
+  content: '';
 }
 
 .modal-fielt {
