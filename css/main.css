@@ -123,6 +123,12 @@ ul {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -135,6 +141,13 @@ ul {
   padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo-element {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .accent-header {
@@ -161,6 +174,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .nav-header {
     padding-left: 0px;
+    justify-content: normal;
   }
 }
 
@@ -171,6 +185,18 @@ ul {
 @media screen and (max-width: 767px) {
   .nav-set {
     display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav-set {
+    margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-set {
+    margin-right: 305px;
   }
 }
 
@@ -343,6 +369,7 @@ ul {
   width: 100vw;
   height: 100vh;
   padding: 10px 5px 48px 40px;
+  z-index: 5;
 }
 
 .menu-close {
@@ -449,7 +476,6 @@ ul {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -547,15 +573,18 @@ ul {
   box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08), 0px 3px rgba(0, 0, 0, 0.1);
 }
 
-.feature {
-  margin-left: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .feature {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    margin-bottom: -30px;
   }
 }
 
@@ -611,6 +640,13 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    text-align: left;
+  }
 }
 
 .text {
@@ -634,7 +670,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .activ-set {
     display: none;
   }
@@ -900,6 +936,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer-block {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -955,6 +992,7 @@ ul {
   .footer-socials-blok {
     margin-right: 93px;
     padding-top: 12px;
+    text-align: left;
   }
 }
 

@@ -11,6 +11,7 @@
   align-items: center;
   @media screen and (min-width: 1200px) {
     padding-left: 0px;
+    justify-content: normal;
   }
 }
 
@@ -19,7 +20,13 @@
     display: none;
   }
   display: flex;
-  // margin-right: 305px;
+  @media screen and (min-width: 767px) {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 
 .nav-list {
@@ -169,6 +176,7 @@
   width: 100vw;
   height: 100vh;
   padding: 10px 5px 48px 40px;
+  z-index: 5;
 }
 
 .menu-close {
